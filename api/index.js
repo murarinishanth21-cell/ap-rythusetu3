@@ -483,12 +483,5 @@ app.get('*', (req, res, next) => {
   }
 });
 
-const PORT = process.env.PORT || 8080;
-if (process.env.NODE_ENV !== 'test') {
-  app.listen(PORT, () => {
-    console.log(`Rythu Setu API Server running on port ${PORT}`);
-  });
-}
-
 export default app;
 
